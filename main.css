@@ -1,3 +1,52 @@
+/* font-family: 'Roboto', sans-serif; contents */
+/* font-family: 'Raleway', sans-serif; headers */
 body {
-    
+    margin: 0;
+    background-color: rgb(237, 224, 250);
+}
+
+.navbar {
+    background-color: rgb(53, 0, 50);
+    border: 1px solid;
+}
+.top {
+    margin: 15px 0 15px;
+}
+.dorp-down  {
+    display: none;
+    flex-direction: column;  
+    width: 50%;
+    margin-top: 25px;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: rgb(255, 241, 241);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0 25px 25px;
+    cursor: pointer;
+}
+.hamb-icon {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    cursor: pointer;
+}
+.line {
+    border-radius: 4px;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 241, 241);
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+.change #line1 {
+    transform: rotate(-45deg) translate(-6px, 4px);
+}
+.change #line2 {
+    opacity: 0;
+}
+.change #line3 {
+    transform: rotate(45deg) translate(-8px, -7px)
 }
