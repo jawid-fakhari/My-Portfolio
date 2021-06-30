@@ -17,12 +17,12 @@
     <!-- navbar start -->
     <div class="navbar">
         <div class="top">
-            <a href="#top" class="active">Top</a>
+            <a href="#MyTop" class="active">Top</a>
         </div>
         <div class="dorp-down" id="menu">
-            <a href="#skills">My Skills</a>
-            <a href="#works">Works</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#MySkills">My Skills</a>
+            <a href="#MyWorks">Works</a>
+            <a href="#MyContact">Contact Me</a>
         </div>
         <div class="hamb-icon" onclick="dropDown(this)">
             <div class="line" id="line1"></div>
@@ -31,141 +31,147 @@
         </div>
     </div>
     <!-- top section -->
-    <div class="top-section">
+    <div id="MyTop" class="top-section">
         <div class="profile-img">
             <img src="images/1.jpg" alt="Jawid Fakhari">
         </div>
-        <div class="presentation">
-            <h1>Hi' I'm <span>Jawid</span>,</h1>
-            <h2>I'm a front-end web developer.</h2>
-        </div>
-        <div class="top__button">
-            <button onclick="scrollMyWork(this)">
-                <h3>View my work</h3>
-            </button>
+        <div id="top__desk">
+            <div class="presentation">
+                <h1>Hi' I'm <span>Jawid</span>,</h1>
+                <h2>I'm a front-end web developer.</h2>
+            </div>
+            <div class="top__button">
+                <button onclick="scrollMyWork(this)">
+                    <h3>View my work</h3>
+                </button>
+            </div>
         </div>
     </div>
     <hr>
     <!-- my skills section -->
-    <div class="skills-section center">
-            <h1>My Skills</h1>
+    <div id="MySkills" class="center">
+        <h1>My Skills</h1>
         <!-- frontend section  -->
-        <div class="skills frontend">
-            <h2>Front-end</h2>
-            <div class="skillBox">
-                <p>Html5</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 90%;" ></div>
+        <div class="boxes">
+            <div class="skills frontend">
+                <h2>Front-end</h2>
+                <div class="skillBox">
+                    <p>Html5</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skillBox">
+                    <p>CSS</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skillBox">
+                    <p>JS</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 50%;"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="skillBox">
-                <p>CSS</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 70%;"></div>
+            <!-- Graphic section  -->
+            <div class="skills graphic">
+                <h2>Graphic</h2>
+                <div class="skillBox">
+                    <p>Photoshop</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skillBox">
+                    <p>Illustratore</p>
+
+                    <div class="skill">
+                        <div class="skill_level" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skillBox">
+                    <p>Indesign</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 90%;"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="skillBox">
-                <p>JS</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 50%;"></div>
+            <!-- 3D cad section  -->
+            <div class="skills 3D">
+                <h2>3D CAD</h2>
+                <div class="skillBox">
+                    <p>Rhino</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 80%;"></div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Graphic section  -->
-        <div class="skills graphic">
-            <h2>Graphic</h2>
-            <div class="skillBox">
-                <p>Photoshop</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 75%;"></div>
-                </div>
-            </div>
-
-            <div class="skillBox">
-                <p>Illustratore</p>
-
-                <div class="skill">
-                    <div class="skill_level" style="width: 60%;"></div>
-                </div>
-            </div>
-
-            <div class="skillBox">
-                <p>Indesign</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 90%;"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 3D cad section  -->
-        <div class="skills 3D">
-            <h2>3D CAD</h2>
-            <div class="skillBox">
-                <p>Rhino</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 80%;"></div>
-                </div>
-            </div>
-
-            <div class="skillBox">
-                <p>Keyshot</p>
-                <div class="skill">
-                    <div class="skill_level" style="width: 80%;"></div>
+                <div class="skillBox">
+                    <p>Keyshot</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width: 80%;"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <hr>
     <!-- Wroks section -->
-    <div class="works center">
+    <div id="MyWorks" class="center">
         <h1>Recent Works</h1>
         <!-- frontend works -->
         <!-- crowdfund website -->
-        <div class="skills frontend">
-            <div class="works__img">
-                <img src="images/crowdfunding1.png" alt="crowdfund">
+        <div class="boxes">
+            <div class="skills frontend">
+                <div class="works__img">
+                    <img src="images/crowdfunding1.png" alt="crowdfund">
+                </div>
+                <div class="works__button">
+                    <form action="https://crowdfunding-product-page-main-two.vercel.app/">
+                        <input type="submit" name="" id="" value="Preview">
+                    </form>
+                </div>
             </div>
-            <div class="works__button">
-                <form action="https://crowdfunding-product-page-main-two.vercel.app/">
-                    <input type="submit" name="" id="" value="Preview">
-                </form>
+            <!-- coming-soon website -->
+            <div class="skills frontend">
+                <div class="works__img">
+                    <img src="images/comingsoon.png" alt="coming soon">
+                </div>
+                <div class="works__button">
+                    <form action="https://base-apparel-coming-soon-master-beta-seven.vercel.app/?mysubmit-btn=">
+                        <input type="submit" name="" id="" value="Preview">
+                    </form>
+                </div>
+            </div>
+            <!-- interactive-bar website -->
+            <div class="skills frontend">
+                <div class="works__img">
+                    <img src="images/interactive-bar.png" alt="traffic based pricing">
+                </div>
+                <div class="works__button">
+                    <form action="https://interactive-pricing-component-main-six.vercel.app/">
+                        <input type="submit" name="" id="" value="Preview">
+                    </form>
+                </div>
             </div>
         </div>
-        <!-- coming-soon website -->
-        <div class="skills frontend">
-            <div class="works__img">
-                <img src="images/comingsoon.png" alt="coming soon">
-            </div>
-            <div class="works__button">
-                <form action="https://base-apparel-coming-soon-master-beta-seven.vercel.app/?mysubmit-btn=">
-                    <input type="submit" name="" id="" value="Preview">
-                </form>
-            </div>
-        </div>
-        <!-- interactive-bar website -->
-        <div class="skills frontend">
-            <div class="works__img">
-                <img src="images/interactive-bar.png" alt="traffic based pricing">
-            </div>
-            <div class="works__button">
-                <form action="https://interactive-pricing-component-main-six.vercel.app/">
-                    <input type="submit" name="" id="" value="Preview">
-                </form>
-            </div>
-        </div>
-        
     </div>
     <!-- Contact -->
-    <div class="contact">
+    <div id="MyContact" class="contact">
         <h1>Contact me</h1>
         <form class="contact-form" action="contactform.php" method="post">
-            <input type="text" name="name" class="contact__box" placeholder="Name">
-            <input type="text" name="name" class="contact__box" placeholder="Your e-mail">
-            <input type="text" name="name" class="contact__box" placeholder="Subject">
-            <textarea name="message" id="txt-area" rows="4" cols="50" placeholder="Message"></textarea>
+                <input type="text" name="name" class="contact__box contact__font" placeholder="Name">
+                <input type="text" name="e-mail" class="contact__box contact__font" placeholder="Your e-mail">
+                <input type="text" name="Subject" class="contact__box contact__font" placeholder="Subject">
+            <textarea name="message" class="contact__font" id="txt-area" rows="4" cols="50"
+                placeholder="Message"></textarea>
             <button type="submit" name="submit">Send Mail</button>
         </form>
     </div>

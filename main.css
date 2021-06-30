@@ -13,7 +13,7 @@ p {
 :root {
     --main-color: rgb(53, 0, 50);
 }
-/* navbar satrt */
+/* navbar*/
 .navbar {
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
@@ -201,8 +201,13 @@ input[type='submit'] {
     height: 30px;
     cursor: pointer;
 }
+.contact__font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
 
 @media only screen and (min-width: 600px) {
+    /* navbar */
     .top {
         float: left;
     }
@@ -217,5 +222,39 @@ input[type='submit'] {
     }
     .hamb-icon {
         display: none;
+    }
+    /* top section */
+    .top-section {
+        display: flex;
+        justify-content: center;
+        margin: 100px;
+        gap: 150px;
+    }
+    .profile-img {
+       margin: 20px;
+    }
+    .profile-img img{
+        width: 250px;
+    }
+    /* my skills section */
+    .center {
+        text-align: unset;
+        margin: 150px 50px;
+    }
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px;
+    }
+    .boxes .skills {
+        max-width: 450px;
+    }
+    /* contact */
+    .contact {
+        padding: 50px
+    }
+    .contact-form {
+        width: 45%;
     }
 }
