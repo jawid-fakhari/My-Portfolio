@@ -1,17 +1,21 @@
-<?php
+<?php 
+$name = $_POST['visitor_name'];
+$email = $_POST['visitor_email'];
+$message = $_POST['visitor_message'];
 
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom = $_POST['mail'];
-    $message = $_POST['message'];
+$email_from = 'ajf1988@gmail.com';
 
+$email_subject = "From your portfolio";
 
-    $mailTo = "jawid_fakhari@live.it";
-    $headers = "From: ".$mailFrom;
-    $txt = "You have received and e-mail from ".$name.".\n\n".$message;
+$formcontent="From: $name.\n".
+              "email: $email.\n".
+                 "Message: $message.\n";
 
-    mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.php?mailsend");
-}
+$to = "jawid_fakhari@live.it";
+
+$mailheader = "From: $email \r\n";
+
+mail($to, $email_subject, $formcontent, $mailheader);
+
+header("Location: index.html");
 ?>

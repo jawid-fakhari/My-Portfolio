@@ -40,10 +40,11 @@
                 <h1>Hi' I'm <span>Jawid</span>,</h1>
                 <h2>I'm a front-end web developer.</h2>
             </div>
-            <div class="top__button">
-                <button onclick="scrollMyWork(this)">
-                    <h3>View my work</h3>
-                </button>
+            <div class="social-networks">
+                <a href="https://github.com/jawid-fakhari"><img src="images/github.png" alt="github icon">
+                </a>
+                <a href="https://www.linkedin.com/in/jawid-fakhari/"><img src="images/linkedin.png" alt="linkedin icon">
+                </a>
             </div>
         </div>
     </div>
@@ -166,13 +167,20 @@
     <!-- Contact -->
     <div id="MyContact" class="contact">
         <h1>Contact me</h1>
-        <form class="contact-form" action="contactform.php" method="post">
-                <input type="text" name="name" class="contact__box contact__font" placeholder="Name">
-                <input type="text" name="e-mail" class="contact__box contact__font" placeholder="Your e-mail">
-                <input type="text" name="Subject" class="contact__box contact__font" placeholder="Subject">
-            <textarea name="message" class="contact__font" id="txt-area" rows="4" cols="50"
-                placeholder="Message"></textarea>
-            <button type="submit" name="submit">Send Mail</button>
+        <form action="contactform.php" method="post">
+            <div class="elem-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Type your name here">
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email" name="visitor_email" placeholder="Type your e-mail here" required>
+            </div>
+            <div class="elem-group">
+                <label for="message">Write your message</label>
+                <textarea name="visitor_message" id="message" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
     </div>
 
