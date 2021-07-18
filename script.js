@@ -1,11 +1,13 @@
-var x = document.getElementById("menu");
-
-
-function dropDown(e) {
-    e.classList.toggle("change");
-    if (x.style.display === "flex") {
-        x.style.display = "none";
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
     } else {
-        x.style.display = "flex";
+      x.className = "topnav";
     }
-}
+    document.querySelectorAll('.hideOnClick').forEach(item => {
+      item.addEventListener('click', hidePanel => {
+        x.className = 'topnav';
+      });
+    });
+} 

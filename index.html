@@ -14,22 +14,23 @@
 </head>
 
 <body>
+
     <!-- navbar start -->
-    <div class="navbar">
-        <div class="top">
-            <a href="#MyTop" class="active">Top</a>
-        </div>
-        <div class="dorp-down" id="menu">
-            <a href="#MySkills">My Skills</a>
-            <a href="#MyWorks">Works</a>
-            <a href="#MyContact">Contact Me</a>
-        </div>
-        <div class="hamb-icon" onclick="dropDown(this)">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-        </div>
+<div class="navbar">
+    <div class="topnav" id="myTopnav">
+        <a href="#MyTop" class="active hideOnClick">Top</a>
+        <a href="#MySkills" class="hideOnClick">My Skills</a>
+        <a href="#MyWorks" class="hideOnClick">My Works</a>
+        <a href="#MyContact" class="hideOnClick">Contact</a>
     </div>
+
+    <div class="hamb-icon" onclick="myFunction(this)">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+    </div>
+</div>
+    
     <!-- top section -->
     <div id="MyTop" class="top-section">
         <div class="profile-img">
