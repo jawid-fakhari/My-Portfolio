@@ -1,5 +1,8 @@
 /* font-family: 'Roboto', sans-serif; contents */
 /* font-family: 'Raleway', sans-serif; headers */
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background-color: #deeeea;
