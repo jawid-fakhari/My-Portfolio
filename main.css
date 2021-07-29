@@ -23,7 +23,7 @@ p {
     top: 0;
 }
 .topnav {
-    background-color: #231E23;
+    background-color: var(--main-color);
     overflow: hidden;
 }
 .topnav a {
