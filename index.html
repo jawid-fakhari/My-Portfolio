@@ -16,21 +16,21 @@
 <body>
 
     <!-- navbar start -->
-<div class="navbar">
-    <div class="topnav" id="myTopnav">
-        <a href="#MyTop" class="active hideOnClick">Top</a>
-        <a href="#MySkills" class="hideOnClick">My Skills</a>
-        <a href="#MyWorks" class="hideOnClick">My Works</a>
-        <a href="#MyContact" class="hideOnClick">Contact</a>
+    <div class="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="#MyTop" class="active hideOnClick">Top</a>
+            <a href="#MySkills" class="hideOnClick">My Skills</a>
+            <a href="#MyWorks" class="hideOnClick">My Works</a>
+            <a href="#MyContact" class="hideOnClick">Contact</a>
+        </div>
+
+        <div class="hamb-icon" onclick="myFunction(this)">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
     </div>
 
-    <div class="hamb-icon" onclick="myFunction(this)">
-        <div class="line" id="line1"></div>
-        <div class="line" id="line2"></div>
-        <div class="line" id="line3"></div>
-    </div>
-</div>
-    
     <!-- top section -->
     <div id="MyTop" class="top-section">
         <div class="profile-img">
@@ -58,21 +58,30 @@
             <div class="skills frontend">
                 <h2>Front-end</h2>
                 <div class="skillBox">
-                    <p>Html5</p>
+                    <div class="skillBox__flex">
+                        <p>Html5</p>
+                        <span>50%</span>
+                    </div>
                     <div class="skill">
-                        <div class="skill_level" style="width: 90%;"></div>
+                        <div class="skill_level" style="width: 50%;"></div>
                     </div>
                 </div>
 
                 <div class="skillBox">
-                    <p>CSS</p>
+                    <div class="skillBox__flex">
+                        <p>CSS</p>
+                        <span>50%</span>
+                    </div>                   
                     <div class="skill">
-                        <div class="skill_level" style="width: 70%;"></div>
+                        <div class="skill_level" style="width: 50%;"></div>
                     </div>
                 </div>
 
                 <div class="skillBox">
-                    <p>JS</p>
+                    <div class="skillBox__flex">
+                        <p>JS</p>
+                        <span>50%</span>
+                    </div>
                     <div class="skill">
                         <div class="skill_level" style="width: 50%;"></div>
                     </div>
@@ -81,16 +90,24 @@
 
             <!-- Graphic section  -->
             <div class="skills graphic">
+
                 <h2>Graphic</h2>
                 <div class="skillBox">
-                    <p>Photoshop</p>
+                    <div class="skillBox__flex">
+                        <p>Photoshop</p>
+                        <span>60%</span>
+                    </div>
+                    
                     <div class="skill">
-                        <div class="skill_level" style="width: 75%;"></div>
+                        <div class="skill_level" style="width: 60%;"></div>
                     </div>
                 </div>
 
                 <div class="skillBox">
-                    <p>Illustratore</p>
+                    <div class="skillBox__flex">
+                        <p>Illustratore</p>
+                        <span>60%</span>
+                    </div>
 
                     <div class="skill">
                         <div class="skill_level" style="width: 60%;"></div>
@@ -98,7 +115,11 @@
                 </div>
 
                 <div class="skillBox">
-                    <p>Indesign</p>
+                    <div class="skillBox__flex">
+                        <p>Indesign</p>
+                        <span>90%</span>
+                    </div>
+                    
                     <div class="skill">
                         <div class="skill_level" style="width: 90%;"></div>
                     </div>
@@ -109,14 +130,22 @@
             <div class="skills 3D">
                 <h2>3D CAD</h2>
                 <div class="skillBox">
-                    <p>Rhino</p>
+                    <div class="skillBox__flex">
+                        <p>Rhino</p>
+                        <span>80%</span>
+                    </div>
+                    
                     <div class="skill">
                         <div class="skill_level" style="width: 80%;"></div>
                     </div>
                 </div>
 
                 <div class="skillBox">
-                    <p>Keyshot</p>
+                    <div class="skillBox__flex">
+                        <p>Keyshot</p>
+                        <span>80%</span>
+                    </div>
+            
                     <div class="skill">
                         <div class="skill_level" style="width: 80%;"></div>
                     </div>
@@ -131,6 +160,18 @@
         <!-- frontend works -->
         <!-- crowdfund website -->
         <div class="boxes">
+            <!-- splitter app -->
+            <div class="skills frontend">
+                <div class="works__img">
+                    <img src="images/splitter-app.png" alt="crowdfund">
+                </div>
+                <div class="works__button">
+                    <form action="https://tip-calculator-app-xi.vercel.app/">
+                        <input type="submit" name="" id="" value="Preview">
+                    </form>
+                </div>
+            </div>
+            <!-- crowdfunding page -->
             <div class="skills frontend">
                 <div class="works__img">
                     <img src="images/crowdfunding1.png" alt="crowdfund">

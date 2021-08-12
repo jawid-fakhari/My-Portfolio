@@ -110,10 +110,15 @@ p {
     width: 100%;
     margin: 20px 0;
 }
-.skillBox p {
+.skillBox p, span {
     color: #deeeea;
     text-transform: uppercase;
     font-weight: bold;
+}
+.skillBox__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .skill {
     box-sizing: border-box;
